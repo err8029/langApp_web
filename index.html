@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--animation scripting (after html is loaded)-->
+    <!--<script defer src="node_modules/swup/dist/swup.min.js"></script>-->  
+    <link href="styles.css" rel="stylesheet">
+    <link href="transitions.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <title>Lang App</title>
 </head>
-<body>
-    <h1>hello world</h1>
+<body class="container full-height-grow">
+
+    <header class="main-header">
+        <!-- navigation upper bar -->
+        <a href="index.html" class="brand-logo">
+            <!-- logo -->
+            <img src="Images/brand_logo.png" width="50" height="50" >
+            <div class="brand-logo-name">Lang App</div>
+        </a>
+
+        <nav class ="main-nav" id="myHeader">
+            <ul>
+                <!-- options menu -->
+                <li><a href="about-app.html">Spaced repetition</a></li>
+                <li><a href="adding.html">Adding words</a></li>
+            </ul>
+        </nav>
+    </header>
+            <section class="home-main-section">
+                <div class="img-wrapper">
+                    <div class="phone-image-main animated-slide-in"></div>
+                </div>
+                <div class="call-to-action animated-slide-out">
+                    <!--title-->
+                    <h1 class="title">Lang App</h1>
+                    <!--subtitle-->
+                    <span class="subtitle">Learning vocabulary was never easier</span>
+                    <!--separator-->
+                    <div class="separator"></div>
+                    <!--text-->
+                    <p class="text">The power of Spaced Repetiton at your hands, now availables on Play Store. The Aplication is equiped with:</p>
+                    <ul class="text">
+                        <li>A quizz utility</li>
+                        <li>A full blown calendar</li>
+                        <li>Some statistics and achievements</li>
+                    </ul>
+                    <!--download buttons-->
+                    <div class="download-wrapper">
+                        <a href="https://play.google.com/store" class="btn">Download for free</a>
+                        <a href="https://www.youtube.com" class="btn">Download</a>
+                    </div>
+                </div>
+
+
+            </section>
+            <section class="footer">
+                <div class="btn-footer">
+                    <a href="about-app.html"><img src="Images/arrow-down.png" width="50" height="50" ></a>
+                </div>
+            </section>
+
+
 </body>
 </html>
