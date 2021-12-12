@@ -1,0 +1,74 @@
+
+.hide {
+    max-height: 0 !important;
+}
+
+.dropdown{
+    padding: 5px;
+    margin-top: 25px;
+    margin-left: 50px;
+    right: 2rem;
+	min-width: 45px;
+    min-height: 45px;
+	margin-bottom: 1em;
+    
+}
+
+.dropdown .title-dropdown{
+	width: 100%;
+    min-width: 45px;
+    min-height: 45px;
+}
+
+.dropdown .title .fa-angle-right{
+	float: right;
+	margin-right: .7em;
+	transition: transform .3s;
+}
+
+.dropdown .menu{
+    top: 56px;
+	transition: max-height .5s ease-out;
+	max-height: 20em;
+	overflow:hidden;
+    background-color: #bfc7f2;
+    margin-top: 17px;
+    position:fixed;
+}
+
+.dropdown .menu .option{
+	margin: 1em .3em 1em .3em;
+	margin-top: 0.3em;
+    min-height: 35px;
+    min-width: 40px;
+}
+
+.dropdown .menu .option:hover{
+	background: rgba(0,0,0,0.2);
+}
+
+.pointerCursor:hover{
+	cursor: pointer;
+}
+
+.rotate-90{
+	transform: rotate(90deg);
+}
+
+.img-lang{
+    background-image: url(/Images/index/en_0.png);
+    flex-grow: 1;
+    min-height: 40px; /*it will never be higher than 70% of the screen*/
+    min-width: 50px; /*it will never be smaller than 30% of the screen*/
+    background-size: contain; /*it wont crop the image and scale it naturally*/
+    background-repeat: no-repeat;
+    background-position:center center;
+    margin-left: 2vmin;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

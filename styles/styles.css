@@ -1,0 +1,179 @@
+
+/* boxsizing for all the appplication, so to have better control of width and height */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+/* color for the entire body of the page*/
+body{
+    background-color: #FFFFFF;
+    font-family: Roboto, sans-serif;  
+    min-height: 100vh;
+    color:black;
+
+}
+
+/*adjust the object to take all the body except the header*/
+.full-height-grow{
+    display: flex;
+    flex-direction: column;
+}
+
+/* import the font, sizes (100,400,500,700)*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,700&display=swap');
+
+.brand-logo{
+    display: flex; /*the items display next to each other*/
+    align-items: center;
+    font-size: 2em;
+    color: #FFFFFF;
+    text-decoration: none; /*get rid of the underline due to the anchor*/
+}
+
+/*logo left margin*/
+.brand-logo-name{
+    margin-left: 1rem;
+}
+
+/*navigation bar: align them horizontally and take out the dots*/
+.main-nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+    list-style: none;
+}
+
+/*navigation bar texts*/
+.main-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1rem;
+    
+}
+
+/*navigation bar texts when hovering*/
+.main-nav a:hover{
+    color:#808080;
+}
+
+/*align horizontally the texts of the header
+   - at center
+   - with the maximum distance possible between logo and nav*/
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-image: linear-gradient(to left,#a1aded,#bfc7f2);
+    padding-left: 15vmin;
+    padding-right: 10vmin;
+    border-radius: 0px 0px 45px 45px;
+    align-content: center;
+    position: fixed;
+    width: 94.5%;
+}
+
+/*selected element in nav*/
+.active{
+    background-color: #bfc7f2;
+}
+
+/*allow the body of the page to resize depending on the screen size*/
+.container{
+    min-width: 95vw;
+    margin: 0 auto;
+    padding: 0 5vmin;
+}
+
+/*style for the title*/
+.title{
+    font-weight: 500;
+    font-size:3em;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.subtitle{
+    font-weight: 500;
+    font-size:1.2em;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+/*style for the buttons
+   - no underlining
+   - paddings and corners
+   - colors as in the protoype*/
+.btn{
+    color: black;
+    background-color:#f5d9a1;
+    padding: .7rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    margin: 1vmin;
+}
+
+.btn-footer{
+    text-decoration: none;
+    margin: 2vmin;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+.separator{
+    background-color: #a1aded;
+    margin-bottom: 2vmin;
+    min-height: 5px;
+    min-width: 85vmin;
+}
+
+/*** animations ***/
+
+
+.slide-in{
+    animation: slide-in 0.5s ease forwards;
+}
+
+.animated-slide-in{
+    animation: slide-in 1s;
+}
+
+@keyframes slide-in {
+    from{
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+  }
+
+
+
+.animated-slide-out{
+    animation: slide-out 1s;
+}
+
+@keyframes slide-out {
+    from{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+  }
+
+
+
+
+

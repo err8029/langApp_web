@@ -1,0 +1,29 @@
+{
+    "menu_item1":"Spaced repetition",
+    "menu_item2": "Adding words",
+    "menu_item3":"Privacy",
+    "subtitle_index":"Learning vocabulary was never easier",
+    "t-element_index":"The power of Spaced Repetition at your hands, now available on Play Store. The application is equiped with:",
+    "list-element1_index":"A dictionary with import/export functions",
+    "list-element2_index":"A quizz utility with a full blown calendar",
+    "list-element3_index":"Some statistics, achievements and your own profile",
+    "btn-free_index":"Download for free",
+    "btn-paid_index":"Download",
+
+    "subtitle_about":"What is Spaced Repetition?",
+    "t_about":"Spaced learning is at the core of Lang App, this technique consists on dividing a big study set into condensed sessions. Such study sessions will be repeated as long as it is needed. In the case of Lang App, the application is able to assess the quality of your learning, as well as the required time to properly recall a word or sentence.",
+    "t2_about":"As shown on the graph, once you introduce and study a word this might be more difficult to recall. However, with Lang App this decay is kept under control, so that you are able to revisit the word and strenghten its memorisation.<br> The algorithm used is inspired in supermemo-2 a method developed by Piotr Woźniak, which in term inspired such popular apps as Duolingo.",
+    "t3_about":"In order to take advantage of spaced repetition, you just need to follow the incorporated calendar. This page will store the daily study sessions. Moreover, you can set up daily reminders, so that you rview the words on time. Finally the scores as well as other interesting information can be visualized at the statistics page.",
+
+    "subtitle_Adding":"A dictionary to rule them all",
+    "subtitle2_Adding":"Too lazy to add words by your own?",
+    "subtitle3_Adding":"Adding words, word by word",
+    "subtitle4_Adding":"Adding words, with a generator",
+    "t_Adding":"Aside from the quiz functionality, the app contains an advanced dictionary. Its main goal of is to visualize each word and its information (sentence, repetitions, score, tags...). It is important to note that the study word has to be contained in the sentence. Such word must provided as it is, in the case of a verb or a declination you are able to separate its modified form by comma. Lang app allows the user to create multiple dictionaries (one per each langue), in order to change them is as easy as typing the desired study language in the settings panel.",
+    "t2_Adding":"Lang App's team is currently working in already made files, so that you can learn new vocabulary without introducing any word, no hustles at all. In some time we expect to assemble a full spanish course from A1 (begginer) to C2 (proficiency). The app may also offer complementary packages for other languages such as Lithuanian or Catalan",
+    "t3_Adding":"The app automatically sets up the date and scoring information for you. All what you need is to fill in the word, translation and sentence. You may also want to add some extra tags per word (up to 3).",
+    "t4_Adding":"If you want to add hundreds or thousands of words we have an interactive excel template for you, just fill in the table, generate a CSV file, upload it to your phone and import it to the app. Moreover, the word generator template allows you to drill down through your tags and while exporting it runs some basic integrity checks, so that you know if something might be wrong with the spelling or information provided to Lang App.",
+    "btn-packages":"Download language packages (soon)",
+    "btn-excel":"Download table generator"
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<script src="main.js" defer></script>
+<script defer>
+    function load(){
+        var translate = new Translate();
+
+        if (localStorage.getItem("currentLng")=== null ){
+            var currentLng = 'en';//'fr'
+            localStorage.setItem("currentLng",currentLng)
+        }
+        var attributeName = 'data-tag';
+        translate.init(attributeName, localStorage.getItem("currentLng"));
+        translate.process(); 
+
+        //obtiene elementos
+        const dropdownTitle = document.querySelector('.dropdown .title-dropdown');
+        const dropdownOptions = document.querySelectorAll('.dropdown .option');
+    
+        //vincula listeners a estos elementos
+        dropdownTitle.addEventListener('click', toggleMenuDisplay);
+        dropdownOptions.forEach(option => option.addEventListener('click',handleOptionSelected));
+        document.querySelector('.dropdown .title-dropdown').addEventListener('change',handleTitleChange);
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css styling files-->
+    <!--animation scripting (after html is loaded)-->  
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/adding.css" rel="stylesheet">
+    <link href="styles/dropdown.css" rel="stylesheet">
+    <title>Lang App - about</title>
+</head>
+<body class="container full-height-grow preload-images" onload="load()">
+    <header class="main-header">
+        <!-- navigation upper bar -->
+        <a href="index.html" class="brand-logo">
+            <!-- logo -->
+            <img src="Images/brand_logo.png" width="50" height="50" >
+            <div class="brand-logo-name">Lang App</div>
+        </a>
+
+        <nav class ="main-nav" id="myHeader">
+            <ul>
+                <!-- options menu -->
+                <li><a class="menu-clickable" href="about-app.html" data-tag="menu_item1"></a></li>
+                <li><a class="menu-clickable active" href="adding.html" data-tag="menu_item2"></a></li>
+                <li><a class="menu-clickable" href="GDPR.html" data-tag="menu_item3"></a></li>
+                <li>
+                    <div class="dropdown">
+            
+                        <div class="title-dropdown pointerCursor">
+                            <div class="img-lang center" name="img"></div>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        
+                        <div class='menu pointerCursor hide'>
+                            <div class="option hide center"><img src="/Images/index/en_0.png" width="35px" height="35px" id="option1"></div>
+                            <div class="option hide center"><img src="/Images/index/es_0.png" width="35px" height="35px" id="option2"></div>
+                            <div class='option hide center'><img src="/Images/index/cat_0.png" width="35px" height="35px" id='option3'></div>
+                            <!--<div class='option hide center'><img src="/Images/index/cat_0.png" width="35px" height="35px" id='option4'></div>-->
+                        </div>
+                    </div> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+        <section class="home-main-section">
+            <div class="img-wrapper animated-slide-in">
+                <div class="phone-image-main" name="img" title-tag="img3"></div>
+            </div>
+            <div class="call-to-action animated-slide-out">
+                <!--title-->
+
+                <!--subtitle-->
+                <div class="subtitle" data-tag="subtitle_Adding">A dictionary to rule them all</div>
+                <!--separator-->
+                <div class="separator"></div>
+                <!--text-->
+                <p class="text" data-tag="t_Adding">Aside from the quiz functionality, the app contains an advanced dictionary. Its main goal of is to visualize each word and its information (sentence, repetitions, score, tags...). It is important to note that the study word has to be contained in the sentence. Such word must provided as it is, in the case of a verb or a declination you are able to separate its modified form by comma. Lang app allows the user to create multiple dictionaries (one per each langue), in order to change them is as easy as typing the desired study language in the settings panel. 
+                </p>
+
+                <!--subtitle-->
+                <div class="subtitle" data-tag="subtitle2_Adding">Too lazy to add words by your own?</div>
+                <!--separator-->
+                <div class="separator"></div>
+                <!--text-->
+                <p class="text" data-tag="t2_Adding">If you want to add hundreds or thousands of words we have an interactive excel template for you, just fill in the table, generate a CSV file, upload it to your phone and import it to the app.<br>
+                Moreover, the word generator template allows you to drill down through your tags and while exporting it runs some basic integrity checks, so that you know if something might be wrong with the spelling or information provided to Lang App
+                </p>
+
+                <!--download buttons-->
+                <div class="download-excel-wrapper">
+                    <a class="btn" data-tag="btn-packages">Download language packages (soon)</a>
+                </div>
+
+                <!--subtitle-->
+                <div class="subtitle" data-tag="subtitle3_Adding">Adding words, word by word</div>
+                <!--separator-->
+                <div class="separator"></div>
+                <!--text-->
+                <p class="text" data-tag="t3_Adding">The app automatically sets up the date and scoring information for you. All what you need is to fill in the word, translation and sentence. You may also want to add some extra tags per word (up to 3)
+                </p>
+
+                <!--subtitle-->
+                <div class="subtitle" data-tag="subtitle4_Adding">Adding words, with a generator</div>
+                <!--separator-->
+                <div class="separator"></div>
+                <!--text-->
+                <p class="text" data-tag="t3_Adding">If you want to add hundreds or thousands of words we have an interactive excel template for you, just fill in the table, generate a CSV file, upload it to your phone and import it to the app.<br>
+                Moreover, the word generator template allows you to drill down through your tags and while exporting it runs some basic integrity checks, so that you know if something might be wrong with the spelling or information provided to Lang App
+                </p>
+                <!--download buttons-->
+                <div class="download-excel-wrapper">
+                    <a href="download/word_adding_template v4.xlsm" class="btn" data-tag="btn-excel">Download table generator (excel)</a>
+                </div>
+            </div>
+        </section>
+
+
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js"></script>
+    <script defer scr="script.js"></script>
+</body>
+<script src="dropdown.js" defer></script>
+</html>

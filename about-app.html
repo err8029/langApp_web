@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <script src="main.js" defer></script>
 <script defer>
     function load(){
         var translate = new Translate();
-
+    
         if (localStorage.getItem("currentLng")=== null ){
             var currentLng = 'en';//'fr'
             localStorage.setItem("currentLng",currentLng)
@@ -13,33 +13,30 @@
         var attributeName = 'data-tag';
         translate.init(attributeName, localStorage.getItem("currentLng"));
         translate.process(); 
-
+    
         //obtiene elementos
         const dropdownTitle = document.querySelector('.dropdown .title-dropdown');
         const dropdownOptions = document.querySelectorAll('.dropdown .option');
-
+    
         //vincula listeners a estos elementos
         dropdownTitle.addEventListener('click', toggleMenuDisplay);
         dropdownOptions.forEach(option => option.addEventListener('click',handleOptionSelected));
         document.querySelector('.dropdown .title-dropdown').addEventListener('change',handleTitleChange);
-
-        //get the active menu item
-     }
+    }
 </script>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--animation scripting (after html is loaded)-->
-    <!--<script defer src="node_modules/swup/dist/swup.min.js"></script>-->  
+    <!--css styling files-->
+    <!--animation scripting (after html is loaded)-->  
     <link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/about.css" rel="stylesheet">
     <link href="styles/dropdown.css" rel="stylesheet">
-    <link href="styles/index.css" rel="stylesheet">
-    <title>Lang App</title>
+    <title>Lang App - about</title>
 </head>
 <body class="container full-height-grow preload-images" onload="load()">
-
     <header class="main-header">
         <!-- navigation upper bar -->
         <a href="index.html" class="brand-logo">
@@ -47,10 +44,11 @@
             <img src="Images/brand_logo.png" width="50" height="50" >
             <div class="brand-logo-name">Lang App</div>
         </a>
+
         <nav class ="main-nav" id="myHeader">
             <ul>
                 <!-- options menu -->
-                <li><a class="menu-clickable" href="about-app.html" data-tag="menu_item1"></a></li>
+                <li><a class="menu-clickable active" href="about-app.html" data-tag="menu_item1"></a></li>
                 <li><a class="menu-clickable" href="adding.html" data-tag="menu_item2"></a></li>
                 <li><a class="menu-clickable" href="GDPR.html" data-tag="menu_item3"></a></li>
                 <li>
@@ -71,43 +69,45 @@
                 </li>
             </ul>
         </nav>
-
-
     </header>
-            <section class="home-main-section">
-                <div class="img-wrapper">
-                    <div class="phone-image-main animated-slide-in" name="img" title-tag="img0"></div>
-                </div>
-                <div class="call-to-action animated-slide-out">
-                    <!--title-->
-                    <h1 class="title">Lang App</h1>
-                    <!--subtitle-->
-                    <span class="subtitle" data-tag="subtitle_index">Learning vocabulary was never easier</span>
-                    <!--separator-->
-                    <div class="separator" ></div>
-                    <!--text-->
-                    <p class="text" data-tag="t-element_index">Learning vocabulary was never easier</p>
-                    <ul class="text">
-                        <li data-tag="list-element1_index">A quizz utility</li>
-                        <li data-tag="list-element2_index">A full blown calendar</li>
-                        <li data-tag="list-element3_index">Some statistics and achievements</li>
-                    </ul>
-                    <!--download buttons-->
-                    <div class="download-wrapper">
-                        <a data-tag="btn-free_index" href="https://play.google.com/store" class="btn">Download for free</a>
-                        <a data-tag="btn-paid_index" href="https://www.youtube.com" class="btn">Download</a>
+
+
+        <section class="home-main-section">
+            <div class="img-wrapper animated-slide-in">
+                <div class="phone-image-main" name="img" title-tag="img1"></div>
+            </div>
+            <div class="call-to-action animated-slide-out">
+                <!--subtitle 1-->
+                <div class="subtitle" data-tag="subtitle_about">What is Spaced Repetition?</div>
+                <!--separator 1-->
+                <div class="separator"></div>
+                <!--text 1-->
+                    <p class="text" data-tag="t_about">
+                        Spaced learning is at the core of Lang App, this technique consists on dividing a big study set into condensed sessions. Such study sessions will be repeated as long as it is needed. In the case 
+                        of Lang App, the application is able to assess the quality of your learning, as well as the required time to properly recall a word or sentence.
+                    </p>
+                    <P class="text graph" data-tag="t2_about">
+                        As shown on the graph, once you introduce and study a word this might be more difficult to recall. However, with Lang App this decay is kept under control, so that you are able to revisit the word and strenghten its memorisation.<br>
+                        The algorithm used is inspired in supermemo-2 a method developed by Piotr Woźniak, which in term inspired such popular apps as Duolingo.
+                    </P>
+                    <p class="text" data-tag="t3_about">
+                        In order to take advantage of spaced repetition, you just need to follow the incorporated calendar. This page will store the daily study sessions. Moreover, you can set up daily reminders, so that you rview the words on time. Finally the scores as well as other interesting information can be visualized at the statistics page 
+                    </p>
+                    <div class="figure-wrapper">
+                        <div class="image-figure" name="img" title-tag="img2"></div>
                     </div>
-                </div>
+     -->         
+            </div>
+        </section>
 
+    <section class="footer">
+        <div class="btn-footer">
+            <a href="adding.html"><img src="Images/arrow-down.png" width="50" height="50" ></a>
+        </div>
+    </section>
 
-            </section>
-            <section class="footer">
-                <div class="btn-footer">
-                    <a href="about-app.html"><img src="Images/arrow-down.png" width="50" height="50" ></a>
-                </div>
-            </section>
-
-
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js"></script>
+    <script defer scr="script.js"></script>
 </body>
 <script src="dropdown.js" defer></script>
 </html>

@@ -1,0 +1,28 @@
+{
+    "menu_item1":"Repetición espaciada",
+    "menu_item2": "Añadir palabras",
+    "menu_item3":"Privacidad",
+    "subtitle_index":"Aprender vocabulario nunca fue tan fácil",
+    "t-element_index":"El poder de la Repetición Espaciada en tus manos, ahora disponible en Play Store. La aplicación viene equipada con",
+    "list-element1_index":"Un diccionario con funciones de exportación/importación.",
+    "list-element2_index":"Una funcionalidad de Quizz con calendario completo.",
+    "list-element3_index":"Estatísticas, logros y tu propio perfil.",
+    "btn-free_index":"Descarga gratuita",
+    "btn-paid_index":"Descarga de pago",
+
+    "subtitle_about":"¿Qué es la Repetición Espaciada?",
+    "t_about":"El aprendizaje en sesiones espaciadas es la idea fundamental de Lang App. Esta técnica consiste en dividir un número de palabras a estudiar en diferentes sesiones. Dichas seisiones se van repitiendo en el tiempo hasta que sea necesario para así poder recordar las palabras en cuestión. Para lograrlo, Lang App califica la calidad de la respuesta en cada intento, utilizando multiples factores (tiempo, repeticiones previas, evolución de los intentos...).",
+    "t2_about":"Tal y como se puede ver en el gráfico, una vez que se introduce y estudia una palabra su recuerdo va disminuyendo en el tiempo. Aun así, esta disminución puede ser medida y controlada para poder revisitar la palabra y reforzar su conocimiento. <br> El algoritmo de Lang App que consigue esto, esta a su vez inspirado en Supermemo-2 un método desarrollado por Piotr Woźniak, el cual es a la vez usado en otras aplicaciones como Duolingo.",
+    "t3_about":"Para poder usar la Repetición Espaciada solo hace falta realizar a tiempo las sesiones que Lang App programa en su calendario, donde podrás encontrar toda la información acerca de las siguientes sesiones o las sesiones no realizadas. La aplicación permite al usuario configurar recordatorios diarios para no saltarse ninguna sesión. Finalmente, en el apartado de Estatisticas, se puede visualizar información adicional como la nota media de todas las palabras.",
+
+    "subtitle_Adding":"Un diccionario para controlarlo todo",
+    "subtitle2_Adding":"Añadir palabras por tu cuenta te resulta dificil?",
+    "subtitle3_Adding":"Añadir palabras, palabra por palabra",
+    "subtitle4_Adding":"Añadir palabras, generador automático",
+    "t_Adding":"Aparte de la funcionalidad de Quizz, la aplicación contiene un diccionario avanzado. Su principal objetivo es visualizar cada palabra junto a su información (frase, repeticiones, nota, etiquetas…). Es importante saber que todas las palabras introducidas deben estar contenidas en su frase de ejemplo tal y como están escritas en el campo “palabra”. En el caso de verbos o declinaciones, se puede añadir su forma modificada separándola con una coma en el campo “palabra”. Lang App permite la creación de un diccionario para cada idioma, para poder cambiar de diccionario es tan fácil como escribir el idioma deseado en el campo “lengua de estudio” de la página de configuración.",
+    "t2_Adding":"El equipo de Lang App está trabajando en paquetes de palabras de distintos niveles. Pronto estarán disponibles los modulos de vocabulario para aprender inglés desde A1 (básico) hasta C2 (maestría).",
+    "t3_Adding":"Al añadir una palabra, la aplicación automáticamente configura la fecha actual y la puntuación inicial. Todo lo que hay que hacer es rellenar los campos: Palabra, traducción y frase. También es posible incluir etiquetas (3 por cada palabra).",
+    "t4_Adding":"En el caso de que se quiera añadir cientos o miles de palabras, se dispone de una plantilla Excel automatizada. Solo es necesario rellenar la tabla, generar el archivo CSV, subirlo al teléfono e importarlo a la App. La plantilla incorpora la posibilidad de filtrar elementos, así como controles automáticos para garantizar que no hay errores en la disposición y coherencia de los datos introducidos.",
+    "btn-packages":"Descarga paquetes de idioma (proximamente)",
+    "btn-excel":"Descarga plantilla (excel)"
+}

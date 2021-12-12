@@ -1,0 +1,29 @@
+{
+    "menu_item1":"Repetició Espaciada",
+    "menu_item2": "Afegir paraules",
+    "menu_item3":"Privacitat",
+    "subtitle_index":"Aprendre vocabulari mai ha estat tan senzill",
+    "t-element_index":"El poder de la Repetició Espaciada a les teves mans, ara disponible a la Play Store. L'aplicació ve equipada amb:",
+    "list-element1_index":"Un diccionari amb funcions per a importar i exportar paraules.",
+    "list-element2_index":"Una utilitat de Quizz amb calendari incorporat.",
+    "list-element3_index":"Algunes estadístiques interesants com la nota mitja de totes les paraules i també metes per motivar-te",
+    "btn-free_index":"Descàrrega gratuïta",
+    "btn-paid_index":"Descàrrega",
+
+    "subtitle_about":"Qué es la Repetició Espaciada?",
+    "t_about":"La Repetició Espaciada es troba en el centre de l'aplicació Lang App, aquesta técnica consisteig en dividir una serie de paraules o coses a estudiar en sesions més petites. Aquestes sesions de estudi serán repetides tantes vegades com sigui necessaries a la fi de poder memoritzar tot el contingut en el temps. En el cas de Lang App, la app es capaç per si sola de evaluar la qualitat i l'evolució de l'aprenentatge de cada paraula.",
+    "t2_about":"Tal i com es pot veure en la gráfica, una vegada s'introdueix i s'estudia una paraula, el record d'aquest mot es deteriora en el temps. El objectiu de Lang App es poder controlar aquest deteriorament i que mai olvidis les teves paraules, mitjançant una serie de sessions de reforç cada x temps.<br> El algoritme utilitzat está inspirat en Supermemo-2, un métode desenvolupat per Piotr Woźniak, que a la seva vegada ha inspirat algunes aplicacions tan pocpulars com Duolingo.",
+    "t3_about":"Aprofitar els beneficis de la Repetició Espaciada es tan fácil com seguir el calendari de Lang App. Dins del calendari, podrás trobar les sessions d'estudi pendents i no realitzades, així com informació adicional del seu contingut. Ademés, també pots configurar recordatoris diaris per així estar al dia amb les sesions d'estudi. Finalment, Lang App posa a la disposició de l'usuari informació adicional, la qual pot ser consultada a l'apartat de Estadístiques.",
+
+    "subtitle_Adding":"Un diccionari per controlar-ho tot",
+    "subtitle2_Adding":"Massa complicat de afegir paraules pel teu compte?",
+    "subtitle3_Adding":"Afegir paraules, paraula a paraula",
+    "subtitle4_Adding":"Afegir paraules, amb un generador automátic",
+    "t_Adding":"Apart de la funcionalitat de Quizz, la app disposa d'un diccionari avançat. El seu objectiu principal es visualitzar cada paraula amb la seva informació (frase, repeticions, puntuació, etiquetes...). Es important recordar que la paraula a estudiar te que estar contenida literalment en la frase. En el cas de verbs o declinacionses posible escriure la forma modificada d'aquest separantla amb una coma (ex: buy, bought). Lang app permet la creació de diferents diccionaris (un per cada llengua), cambiar de diccionari es tan fácil com escriure l'idioma en el camp idioma d'estudi desitgat dins de la página de Configuració.",
+    "t2_Adding":"L'equip de Lang App's está actualment treballant en la possibilitat de adquirir paquets de paraules. Aquests paquets permitrien d'estudiar el vocabulari d'un cert nivell de forma inmediata, sense introduir res. Es preveu oferir un curs complet Espanyol- Anglés desde el A1 (principiant) hasta el C2 (mestre). També es preveu oferir alguns paquets complementaris en altres idiomes com Lituá i Català",
+    "t3_Adding":"L'aplicació es capaç de configurar automàticament la data actual, així com la puntuació cada cop que s'afeigeix un mot. Tot el que s'ha de fer es escriure la paraula, la seva traducció i una frase que la contigui. Si ho desitja també es poden afegir etiquetes per a classificar-la (hasta 3 per paraula).",
+    "t4_Adding":"Si es vol afegir centenars o milers de paraules de cop, recomanem utilitzar la plantilla de excel interactiva de Lang App, solsament es necessari emplenar la taula, generar el arxiu CSV, passar-lo al telèfon i importar-lo a l'aplicació. A més a més, abans de l'exporació s'executen automàticament una serie de controls dossenyats per detectar possibles errors i incoherencies.",
+    "btn-packages":"Descàrrega els paquets (pròximament)",
+    "btn-excel":"Descàrrerga la plantilla (excel)"
+}
+

@@ -1,0 +1,154 @@
+.preload-images-index {
+    display: none; 
+    width: 0;
+    height: 0;
+    background: url(/Images/adding/en_0.png),
+                url(/Images/adding/en_1.png),
+                url(/Images/adding/es_0.png),
+                url(/Images/adding/es_1.png),
+                url(/Images/adding/cat_0.png),
+                url(/Images/adding/cat_1.png)
+  }
+
+.home-main-section{
+    display: flex;
+    align-items: stretch; /*align the items to be the full heihgt of the container*/
+    justify-content: space-between; /*ensure that there is the maximum amount of space between elements*/
+    opacity: 1;
+    transition: 500ms;
+    height: 70vmin;
+    max-width: 100vmin;
+    margin-top:7vmin;
+}
+
+.home-main-section .img-wrapper{
+    flex-grow: 1; /*scale of the image*/
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    margin-top: 5vw;
+    justify-content: flex-end;/*push the content as close to the text as possible*/
+}
+
+.home-main-section .phone-image-main{
+    flex-grow: 1;
+    max-height: 100vh; /*it will never be higher than 70% of the screen*/
+    min-width: 35vw; /*it will never be smaller than 30% of the screen*/
+    background-size: contain; /*it wont crop the image and scale it naturally*/
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+
+.home-main-section .call-to-action{
+    display: initial;
+    flex-direction:column; /*line all top to buttom*/
+    margin: 1rem; /*margin between image and text*/
+    width: 80vw;
+    height: 70vh;
+    padding: 1rem;
+}
+
+.home-main-section .image-figure{
+    flex-grow: 1;
+    max-height: 100vh; /*it will never be higher than 70% of the screen*/
+    min-width: 50vw; /*it will never be smaller than 30% of the screen*/
+    background-size: contain; /*it wont crop the image and scale it naturally*/
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.footer{
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end; /*align the items to be the full heihgt of the container*/
+    margin: 2em;
+    bottom: 0px;
+    position: fixed;
+}
+
+.text{
+    text-align: justify;
+    color: gray;
+}
+
+.home-main-section .figure-wrapper{
+    flex-grow: 1; /*scale of the image*/
+    flex-direction:column;
+    display: flex;
+    align-items:center;
+    justify-content:center;/*push the content as close to the text as possible*/
+}
+
+.download-excel-wrapper{
+    flex-grow: 1;
+    align-items: baseline;
+    display: flex;
+    align-content: center;
+    margin-top: 2vmin;
+}
+
+/*if the image gets too small it disapearsa nd the text is centered*/
+@media (max-width: 1100px){
+    .home-main-section .img-wrapper{
+        display: none;
+    }
+    .home-main-section{
+        justify-content: center;
+    }
+    .separator{
+        width: 85vmin;
+    }
+    .home-main-section .call-to-action{
+        width: 90vmin;
+    }
+    .home-main-section .img-figure{
+        min-width: 50vmin;
+    }
+    .home-main-section .figure-wrapper{
+        align-content: center;
+    }
+    .text{
+        text-align: justify;
+    }
+    .menu-clickable{
+    display: none;
+    }
+
+    @media (max-width: 550px){
+        .home-main-section{
+            height: 90vmin;
+            width: 100vmin;
+        }
+        .title{
+            display: none;
+        }
+        .section{
+            width:100vmin;
+        }
+        .home-main-section .call-to-action{
+            margin-top:5vmin;
+        }
+        .container{
+            padding: 0px;
+        }
+        .separator{
+            width: 90vmin;
+        }
+        .home-main-section .call-to-action{
+            width: 100vmin;
+            display: grid;
+        }
+        .download-excel-wrapper{
+            display: grid ;
+            align-content: center;
+            justify-content: center;
+            width: 90vmin;
+        }
+        .graph{
+            display: none;
+        }
+        .main-header{
+            width: 100%;
+        }
+    }
+}
