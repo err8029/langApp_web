@@ -67,7 +67,7 @@ body{
     align-items: center;
     height: 70px;
     background-image: linear-gradient(to left,#a1aded,#bfc7f2);
-    padding-left: 15vmin;
+    padding-left: 10vmin;
     padding-right: 10vmin;
     border-radius: 0px 0px 45px 45px;
     align-content: center;
@@ -115,9 +115,36 @@ body{
     margin: 1vmin;
 }
 
-.btn-footer{
+.arrow{
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end; /*align the items to be the full heihgt of the container*/
+    margin: 2em;
+    bottom: 20px;
+    position: fixed;
+}
+
+.btn-arrow{
     text-decoration: none;
     margin: 2vmin;
+}
+
+.footer{
+    display: flex;
+    bottom: 0px;
+    position: fixed;
+    
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-image: linear-gradient(to left,#a1aded,#bfc7f2);
+    padding-top: 1vmin;
+    padding-left: 10vmin;
+    padding-right: 10vmin;
+    border-radius: 45px 45px 0px 0px;
+    align-content: center;
+    align-self: center;
+    width: 20%;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */

@@ -66,6 +66,9 @@
     .menu-clickable{
         display: none;
     }
+    .main-header{
+        width: 90%;
+    }
 
 }
 

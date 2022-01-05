@@ -61,14 +61,6 @@
     margin-top: -7vmin;
 }
 
-.footer{
-    display: flex;
-    align-self: flex-end;
-    align-items: flex-end; /*align the items to be the full heihgt of the container*/
-    margin: 2em;
-    bottom: 0px;
-    position: fixed;
-}
 
 .text{
     text-align: justify;
@@ -114,6 +106,10 @@
 
     .menu-clickable{
         display: none;
+    }
+
+    .main-header{
+        width: 90%;
     }
 
     @media (max-width: 550px){

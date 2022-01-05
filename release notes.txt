@@ -1,0 +1,7 @@
+<en-US>
+Lang App version 1.0.0:
+- New quizz function
+- New dictionary function
+- New calendar function
+- New statistics funtion
+</en-US>
